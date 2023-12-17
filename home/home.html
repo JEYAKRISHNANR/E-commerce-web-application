@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link href="home.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#" > <img src="" class="logo"  alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a class="active"  href="blog.html">BLOG</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                
+               <li> <i class="bi bi-bag-heart-fill"></i></li>
+             
+            </ul>
+            
+        </div>
+        </section>
+        <p id="demo"></p>
+        <div id="form">
+            <table id="login">
+                <form >
+                    <tr>
+                        <td>Username</td>
+                        <td><input type="text" placeholder="Enter a Username" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="text" placeholder="Enterv a password" id="pass"></td>
+                    </tr>
+                    <tr>
+                       
+                      <td>  <input type="submit" onclick="login()"></td>
+                        </tr>
+                    <!-- </tr>
+                    <tr>
+                        <td><a href="#">Create a Account</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><h6>Thank you visiting visit again</h6></td>
+                    </tr> -->
+                    
+                </form>
+               
+            </table>
+        </div>
+       
+  <script>
+    
+   function login(){
+    var name=document.getElementById("name").value;
+    var pass=document.getElementById("pass").value;
+    let de="hiii";
+    if(name.length == 0) 
+    {
+       
+      var  x="enter a name";  
+       alert("enter name")
+    }
+    else if(name.length==0)
+    {
+        alert("length must be 6 letter ");
+    }
+    else if(pass.length<=5)
+    {
+        alert("enter a password");
+    }
+    else if(pass.length<=6)
+else{
+    alert("Successful");
+   /* location.replace("blog.html");*/
+}
+   }
+   document.getElementById('demo').innerHTML=x;
+  </script>
+</body>
+</html>
